@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aplikacija.organization.ActivityDogodek"
+    android:clickable="true">
+
+
+
+    <TextView android:text="@string/naziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/naziv"
+        android:textSize="15dp"
+        android:textColor="#F00"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/nzv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:layout_below="@+id/naziv"
+        android:singleLine="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ura"
+        android:text="Datum:"
+        android:textColor="#F00"
+        android:textSize="15dp"
+        android:layout_below="@+id/nzv"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdate"
+        android:textSize="15sp"
+        android:width="300dp"
+        android:singleLine="true"
+        android:layout_below="@+id/ura" />
+
+    <TextView
+        android:id="@+id/uraD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ura dogodka: "
+        android:textSize="15dp"
+        android:textColor="#F00"
+        android:layout_below="@+id/txtCena"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:layout_below="@+id/uraD"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/uraD"
+        android:singleLine="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/cena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cena: "
+        android:textSize="15dp"
+        android:textColor="#F00"
+        android:layout_below="@+id/txtdate"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokacija: "
+        android:textSize="15dp"
+        android:textColor="#F00"
+        android:layout_below="@+id/etPrizor"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCena"
+        android:width="180dp"
+        android:singleLine="true"
+        android:layout_below="@+id/cena"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLokacija"
+        android:width="300dp"
+        android:layout_below="@+id/location"
+        android:singleLine="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/lok"
+        android:src="@drawable/zemljevid"
+        android:onClick="odpriZ"
+        android:layout_marginStart="63dp"
+        android:layout_alignBottom="@+id/etLokacija"
+        android:layout_alignStart="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izvajalci, ki bodo nastopali"
+        android:id="@+id/izvId"
+        android:onClick="OpenIzv"
+        android:textStyle="bold"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skladbe, ki jih bodo igrali"
+        android:id="@+id/button3"
+        android:onClick="OpenMusic"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kdo se bo udeležil ?"
+        android:id="@+id/button4"
+        android:onClick="PCome"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button3"
+        android:backgroundTint="#4CAF50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Naslov lokala oz. prizorišča"
+        android:id="@+id/txtPrizor"
+        android:layout_below="@+id/hour"
+        android:layout_alignParentStart="true"
+        android:textColor="#FF00"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPrizor"
+        android:width="300dp"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:layout_below="@+id/txtPrizor"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/scan2"
+        android:onClick="odpriScan"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp" />
+
+
+</RelativeLayout>

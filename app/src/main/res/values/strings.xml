@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dogodki</string>
+    <string name="title_activity_dodajanje_skladb">Skladbe</string>
+    <string name="title_activity_kraj__dogodka">Podrobnosti dogodka</string>
+    <string name="naziv">Naziv: </string>
+
+
+    <string name="title_activity_maps">Zemljevid</string>
+    <string name="title_activity_pregled_izvajalcev">Podrobnosti ansambla</string>
+    <string name="title_activity_pregled__skladb">Pregled Skladb</string>
+    <string name="title_activity_izvajalci">Izvajalci dogodka</string>
+    <string name="title_activity_pregled_udelezb">Seznam oseb</string>
+    <string name="title_activity_prijava">Prijava v spletno aplikacijo</string>
+
+    <string name="signed_in_fmt">Prijavljeni ste kot:  %s</string>
+    <string name="signed_out">Signed out</string>
+    <string name="loading">Loading…</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="title_activity_skeniranje">Skeniranje</string>
+    <string name="title_activity_activity__spreedsheats">Online dogodki</string>
+</resources>

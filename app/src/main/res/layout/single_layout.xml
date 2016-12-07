@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/slikca"
+        android:src="@drawable/even"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:background="#fff" />
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="34dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:background="#999999" />
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Pridejo: "
+        android:id="@+id/attempt"
+        android:textSize="17dp"
+        android:textColor="#00ff00"
+        android:background="#999999" />
+
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="Ne pridejo: "
+        android:id="@+id/attemptNOT"
+        android:textSize="17dp"
+        android:textColor="#FF00"
+        android:background="#999999" />
+
+
+</LinearLayout>

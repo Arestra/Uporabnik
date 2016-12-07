@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aplikacija.organization.Prijava"
+    android:background="#4CAF50">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearLayout5">
+
+
+       <TextView
+           android:id="@+id/title_text"
+           android:layout_width="383dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textColor="@android:color/white"
+           android:textSize="36sp"
+           android:textIsSelectable="true"
+           android:text="SLO Dogodki"
+           android:layout_marginBottom="10dp" />
+
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/google"
+        android:background="#3270ae"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/peopleComing" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Odjavljen"
+        android:id="@+id/status"
+        android:layout_below="@+id/peopleComing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/detail"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_out_and_disconnect"
+        android:weightSum="1"
+        android:layout_below="@+id/detail"
+        android:layout_alignStart="@+id/status">
+
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prijavi se"
+        android:id="@+id/sign_in_button"
+        android:layout_below="@+id/detail"
+        android:layout_centerHorizontal="true"
+        android:onClick="Prijava">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No account yet? Create One"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textColor="#000000" />
+
+</RelativeLayout>
